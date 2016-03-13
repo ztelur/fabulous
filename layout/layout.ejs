@@ -1,13 +1,19 @@
 <%- partial('_partial/head') %>
 
 <body>
-  <header id="header"  class="open"><%- partial('_partial/header') %></header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><%- body %></div></div>
-    <aside id="sidebar" class="alignright"><%- partial('_partial/sidebar', {}, {cache: true}) %></aside>
-    <div class="clearfix"></div>
+  <div id="container">
+    <div id="wrap">
+      <header id="header"  class="open"><%- partial('_partial/header') %></header>
+      <nav id="mobile-nav" class="off"></nav>
+      <div class="outer open">
+
+        <aside id="sidebar" class="alignright"><%- partial('_partial/sidebar', {}, {cache: true}) %></aside>
+        <section id="main"><%- body %></section>
+        <div class="clearfix"></div>
+      </div>
+      <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
+        <%- partial('_partial/after_footer') %>
+    </div>
   </div>
-  <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
-  <%- partial('_partial/after_footer') %>
 </body>
 </html>
