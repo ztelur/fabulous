@@ -2,8 +2,6 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  box-shadow 1px 2px 3px #ddd
-  background #fff
   &.page
     padding-left 20px
     .icon
@@ -332,10 +330,36 @@ article
   p
     margin: 0px 0px 25px
     line-height: 1.8em
-.article-meta:before, .article-meta:after {
-  content: "";
-  display: table;
-}
-.article-meta:after {
-  clear: both;
-}
+.article-meta:before, .article-meta:after
+  content ""
+  display table
+
+.article-meta:after
+  clear both
+
+
+.article-entry ul, .article-entry ol, .article-entry dl
+  margin-top 28px
+  margin-bottom 28px
+
+.article-inner ul, .article-entry ul, .archive-article-inner ul, .widget ul
+  list-style: disc;
+.article-tag-list-item
+  float: left
+  margin-right: 10px
+
+a.article-tag-list-link
+  color: #686d73
+  background: #f5f5f5
+  padding: 0.5rem 0.6rem
+  -webkit-border-radius: 3px
+  border-radius: 3px
+
+.article-entry a
+  color: #42b983
+  text-decoration: none
+  @:hover
+    text-decoration underline
+
+.article-tag-list-link:before
+  content: "#";

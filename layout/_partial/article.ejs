@@ -13,6 +13,17 @@
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
+
+        <% if (post.tags && post.tags.length){ %>
+          <ul class="article-tag-list">
+            <% post.tags.each(function(tag) { %>
+              <li class="article-tag-list-item">
+                <a class="article-tag-list-link" href="<%- config.root+tag.path%>"><%-tag.name%></a>
+              </li>
+            <%})%>
+          </ul>
+        <% } %>
+
         <% if (theme.excerpt_link){ %>
           <p class="article-more-link">
             <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
