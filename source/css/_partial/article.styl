@@ -101,9 +101,9 @@ article
         display none
       &:before
         position absolute
-        font 32px font-icon    
+        font 32px font-icon
         top 0
-        left 0 
+        left 0
         width 32px
         text-align center
 
@@ -285,3 +285,57 @@ article
       margin-top 15px
       iframe
         margin-top 0
+
+
+// -------------------------------------------------
+.article-date, .article-category-link, .archive-year, .widget-title
+  text-decoration none
+  text-transform uppercase
+  letter-spacing 2px
+  color #999
+  margin-bottom 1em
+  line-height 1em
+  text-shadow 0 1px #fff
+  font-weight bold
+
+.article-date
+  float left
+
+.article-inner
+  overflow hidden
+  padding-bottom: 1em
+  border-bottom: 1px dashed #e0e0e0
+
+
+.article-header
+  padding: 0px 0px 0
+  margin-bottom: 30px
+
+.article-inner h1, .article-entry h1, .archive-article-inner h1, .widget h1
+  font-size: 2em
+
+.article-title
+  text-decoration: none
+  font-size: 1.5rem !important
+  font-weight: bold;
+  color: #2c3e50
+  line-height: 1.2
+  webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+
+.article-entry
+  color #2c3e50
+  padding: 0 0px
+
+  p
+    margin: 0px 0px 25px
+    line-height: 1.8em
+.article-meta:before, .article-meta:after {
+  content: "";
+  display: table;
+}
+.article-meta:after {
+  clear: both;
+}
