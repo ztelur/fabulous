@@ -235,7 +235,6 @@ article
   footer
     margin-top 15px
     padding-top 10px
-    border-top 1px solid color-border
     color color-meta
     font-size 0.9em
     line-height 16px
@@ -286,6 +285,9 @@ article
 
 
 // -------------------------------------------------
+.article
+  margin-bottom 35px
+
 .article-date, .article-category-link, .archive-year, .widget-title
   text-decoration none
   text-transform uppercase
@@ -363,3 +365,9 @@ a.article-tag-list-link
 
 .article-tag-list-link:before
   content: "#";
+
+.article-tag-list
+  list-style none !important
+  margin 0px 5px !important
+.article-entry a:hover
+  text-decoration underline
