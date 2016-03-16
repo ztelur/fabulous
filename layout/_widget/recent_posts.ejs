@@ -1,12 +1,14 @@
 <% if (site.posts.length){ %>
-<div class="widget tag">
-  <h3 class="title"><%= __('recent_posts') %></h3>
-  <ul class="entry">
+<div class="widget-wrap mdl-shadow--2dp">
+  <h3 class="widget-title"><%= __('recent_posts') %></h3>
+  <div  class="widget">
+  <ul>
     <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
       <li>
         <a href="<%= config.root %><%= post.path %>"><%= post.title %></a>
       </li>
     <% }); %>
   </ul>
+</div>
 </div>
 <% } %>
