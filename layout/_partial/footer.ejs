@@ -1,8 +1,27 @@
-<div class="alignleft">
-  <% if (config.author){ %>
-  &copy; <%= new Date().getFullYear() %> <%= config.author %>
-  <% } else { %>
-  &copy; <%= new Date().getFullYear() %> <%= config.title %>
-  <% } %>
+<div class="outer footer footer_center">
+  <div id="footer-info" class="inner">
+    &copy;<%= new Date().getFullYear() %>
+    <% if (config.author){ %>
+      <a href="https://github.com/ztelur"><%= config.author %>
+      </a>
+    <% } else { %>
+      <a href="https://github.com/ztelur"><%= config.title %>
+      </a>
+    <% } %>
+    <br>
+    <br>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+
+    <span id="busuanzi_container_site_pv">
+      本站总访问量<span id="busuanzi_value_site_pv"></span>次
+    </span>
+    "Powered by"
+    <a href="http://hexo.io/" target="_blank">Hexo</a>
+    <br>
+    <br>
+    
+  </div>
+
 </div>
 <div class="clearfix"></div>
