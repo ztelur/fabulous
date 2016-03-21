@@ -371,3 +371,53 @@ a.article-tag-list-link
   margin 0px 5px !important
 .article-entry a:hover
   text-decoration underline
+
+// article-nav
+#page-nav
+  margin: 50px auto
+  text-align: center
+  color: #999
+  overflow: hidden
+  a
+    color: #999
+    text-decoration: none
+  .prev
+    float: left
+    width: 64px
+  .page-number
+    display: inline-block;
+    margin-right: 5px;
+    background: #f6f6f6;
+    color: #a6a6a7;
+    width: 43px;
+  .current
+    font-weight: bold
+    background: #42b983
+    color: #fff
+  .space
+    color: #ddd
+  .next
+    float: right
+    width: 64px
+
+#page-nav:after
+  clear: both
+
+#page-nav:before, #page-nav:after
+  content: ""
+  display: table
+
+
+
+#page-nav a, #page-nav span
+  line-height: 1
+  height: 43px
+  text-align: center
+  line-height: 45px
+  font-weight: 600
+  -webkit-border-radius: 4px
+  border-radius: 4px
+  -webkit-transition: color, background 0.2s
+  -moz-transition: color, background 0.2s
+  -ms-transition: color, background 0.2s
+  transition: color, background 0.2s
