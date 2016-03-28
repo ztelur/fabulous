@@ -1,26 +1,38 @@
-.archive-title
-  color color-meta
-  font-weight normal
-  margin-bottom 30px
-  text-shadow 0 0 1px #fff
-  &:before
-    font-family font-icon
-    content '\f073'
-    padding-right 15px
-
-  &.tag
-    &:before
-      content '\f02b'
-
-  &.category
-    &:before
-      content '\f07b'
 
 .archive
   box-shadow 1px 2px 3px color-border
   border-bottom 1px solid color-border
   margin-bottom 50px
-  article
-    box-shadow none
-    .post-content
-      margin-bottom 0
+
+.archive-article
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+    break-inside: avoid-column;
+
+.archive-article-inner
+  padding: 10px;
+  margin-bottom: 15px;
+
+
+.archive-article-date
+  color: #999;
+  text-decoration: none;
+  font-size: 0.85em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  display: block;
+
+.archive-article-title
+  text-decoration: none
+  font-weight: bold
+  color: #2c3e50
+  -webkit-transition: color 0.2s
+  -moz-transition: color 0.2s
+  -ms-transition: color 0.2s
+  transition: color 0.2s
+  line-height: 28px
+  font-size: 0.7em
+.archive-year-wrap
+  margin-top: 5px
+  font-size: 1.2em
