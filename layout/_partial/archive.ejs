@@ -27,7 +27,13 @@
     <% } %>
     <%- partial('archive-post', {post: post}) %>
   <% }) %>
-  <% if (page.posts.length){ %>
     </div></section>
+  <% if (page.total > 1){ %>
+    <nav id="page-nav" class="test">
+      <%- paginator({
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;'
+      }) %>
+    </nav>
   <% } %>
 <% } %>
